@@ -23,7 +23,7 @@ resource "aws_security_group" "vprofile-bean-elb-sg" {  #Beanstalk-ELB & Securit
 resource "aws_security_group" "vprofile-bastion-sg" {
   name = "vprofile-bastion-sg"
   description = "Security group for bastion provisioner ec2 instance" 
-  vpc_id = module.vpc.vpc_id
+  vpc_id = module.vpc.default_vpc_id
   egress {
     from_port = 0
     protocol = "-1"
