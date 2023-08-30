@@ -14,7 +14,7 @@ variable PRIV_KEY_PATH {
 }
 
 variable PUB_KEY_PATH {
-  default = "vprofilekey.pub"
+  default = "vprofilekey.pub"sh
 }
 
 variable USERNAME {
@@ -70,7 +70,7 @@ variable VpcCIDR {
 }
 
 variable PubSub1CIDR {
-  default = "172.21.1.0/16"
+  default = "172.21.1.0/24"
 }
 
 variable PubSub2CIDR {
