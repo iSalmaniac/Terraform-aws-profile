@@ -1,7 +1,7 @@
 resource "aws_security_group" "vprofile-bean-elb-sg" {  #Beanstalk-ELB & Security Group Provisioning
   name = "vprofile-bean-elb-sg"
   description = "Security group for bean-elb"
-  vpc_id = "aws_vpc.mainvpc.id" #vpc_id Module from Terraform registry documentation
+  vpc_id = "module.vpc.vpc_id" 
 
   egress {
     from_port = 0
